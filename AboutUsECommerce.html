@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>About Us</title>
+ <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+ <link rel="stylesheet" href="style.css">
+ 
+
+ 
+</head>
+
+<body>
+    <style>
+        body{
+            background-image:url("");
+
+        }
+        header img{
+            top:0;
+            left:0;
+            margin:0 0px;
+        }
+        #page-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            height:100vh;/* Adjust the height as needed */
+            text-align: center;
+            color: white;
+    }
+        #page-header.about-header{
+            background-image: url("banner.png");
+            
+            width:1700px;
+            height:400px;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align:center;
+            
+            
+        }
+        .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* This allows the boxes to wrap to the next row if there's not enough space */
+}
+
+.fe-box {
+    flex: 1;
+    /* Add any additional styling you need for the boxes here */
+}
+        #about-head {
+            display: flex;
+            align-items: center;
+        }
+        #about-head img{
+            width: 50%;
+            height:auto;
+        }
+        #about-head div{
+            
+            padding-left:0px;
+        }
+        #about-app{
+            text-align:center;
+
+
+        }
+        #about-app .video{
+            width: 70%;
+            
+        }
+        #about-app .video video{
+            width: 100%;
+            height: 100%;
+            border-radius:20px;
+        }
+        .section-p1{
+            padding: 40px 40px;
+        }
+        #navbar{
+        z-index: 10000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:80px;
+        background-color:rgb(229, 224, 224);
+        align-items:right;
+}
+
+    #navbar ul {
+        display: flex; 
+        list-style-type: none; 
+        padding: 0; 
+        margin: 0 1000px; 
+}
+
+    #navbar li {
+        padding: 10px 20px;
+        color:aliceblue;
+         
+}
+
+    #navbar a {
+        text-decoration: none; 
+        color: rgba(0, 0, 0, 0.708);
+        font-weight: bold;
+        text-align:right;
+        font-family: 'Calibri', sans-serif; 
+}
+
+    #navbar a:hover {
+        color:green;
+        border-bottom:2px solid green;
+    }
+
+/* Example for the main content container */
+.main-content {
+    margin-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
+            #mobile{
+                display:flex;
+                align-items:center;
+            }
+            #mobile i{
+                color:#1a1a1a;
+                font-size:24px;
+                padding-left:20px;
+
+            }
+            #close{
+                display:initital;
+                position:absolute;
+                top:30px;
+                left:30px;
+                color:#222;
+                font-size:24px;
+            }
+            #lg-bag{
+                display:none;
+            }
+            #hero {
+                height:70vh;
+                padding:0 80px;
+                background-position:top 30% right 30%
+            }
+            #feature {
+                justify-content: space-between;
+            }
+            #feature .fe-box{
+                width: 155px;
+                margin:0 0 15px 0;
+            }
+            #product1.pro{
+                width:100%;
+
+            }
+            #banner{
+                height:40vh;
+            }
+            #bm-banner .banner-box{
+                height:40vh;
+            }
+            #bm-banner.banner-box2{
+                margin-top:30px;
+
+            }
+            #banner3{
+                padding:0 20px;
+            }
+            #banner3.banner-box{
+                width:100%;
+            }
+            #newsletter{
+                padding:40px 20px;
+                
+            }
+            #newsletter .form{
+                width:100%;
+            }
+        @media(max-width:477px){
+            .section-p1{
+                padding:20px;
+            }
+            #header{
+                padding:10px 30px;
+            }
+            h1{
+                font-size:38px;
+            }
+            h2{
+                font-size:32px;
+            }
+            
+
+            footer.copyright{
+                text-align: start;
+            }
+            #prodetails{
+                display:flex;
+                flex-direction:column;
+            }
+            #prodetails .single-pro-image{
+                width:100%;
+                margin-right:0px;
+            }
+            #prodetails.single-pro-details{
+                width:100%;
+            }
+        }
+
+
+
+
+
+
+        
+
+
+
+
+
+    </style>
+    <section id="header">
+        
+
+        <div>
+            <header id="header">
+                
+                <navbar id="navbar">
+                    
+                <ul>
+                <img src="logo.png" alt="">
+                <li><a href="index.html" style="font-size:30px;">Home</a></li>
+                <li><a href="shop.html" style="font-size:30px;">Shop</a></li>
+                <li><a href="blog.html" style="font-size:30px;">Blog</a></li>
+                <li><a class="active" href="about.html" style="font-size:30px;">About</a></li>
+                <li><a href="contact.html" style="font-size:30px;">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>  
+                </ul>
+                </navbar>
+                
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+        <section id="page-header" class="about-header">
+            <h2 style="color:white;font-weight:bold;">#KnowUs</h2>
+
+            <p style="color:white;">We are an ecommerce community. </p>
+        </section>
+        <section id="about-head" class="section-p1">
+            <img src="a6.jpg" alt="">
+            <div>
+                <h2>Who are We?</h2>
+                <p><strong>Our Vision:</strong> We began with a smart but simple vision where technology and design go hand-in-hand to help people get a feel for its products, plus stylish blocks of color that tell us as much about the company as the text does. In terms of knowing what your audience wants to see, it’s hard to do better than this.
+                    Whether you're a fashion enthusiast seeking the latest trends, a tech-savvy individual in pursuit of cutting-edge gadgets, or someone with a penchant for timeless classics, our curated collection has you covered. From stylish jewelry and chic handbags to state-of-the-art tech accessories and practical everyday items, we take pride in offering a diverse range that transcends age, gender, and lifestyle.
+                </p>
+                <br></br>
+                <marquee background-color="#ccc" loop="-1" scrollamount="5" width="100%">
+                    Create stunning images with as much or as little control as you like thanks to a choice of Basic and Creative modes.
+                    </marquee>
+            </div>
+        </section>
+        <section id="about-app" class="section-p1">
+           <h1>Download Our <a href="#">App</a></h1>
+           <div class="video">
+            <video autoplay muted loop src="1.mp4" style="margin:0 220px;"></video>
+
+           </div>
+
+        </section>
+         <section id="feature" class="section-p1" style="margin:0 180px;border-color: black;">
+            <div class="row" style="border-color: black;">
+                <div class="fe-box" style="border-color: black;">
+                    <img src="freeshipp.png" style="height:200px;width:200px;" alt="">
+                    <h6 style="font-size:25px;color:green;background-color: pink;;">Free Shipping</h6>
+                </div>
+                <div class="fe-box" style="border-color: black;">
+                    <img src="onlineorder.png" style="height:200px;width:200px;" alt="">
+                    <h6 style="font-size:25px;color:green;background-color: lightgreen;">Online Order</h6>
+                </div>
+                <div class="fe-box" style="border-color: black;">
+                    <img src="savmoney.png" style="height:200px;width:200px;" alt="">
+                    <h6 style="font-size:25px;color:green;background-color: lightblue;">Save Money</h6>
+                </div>
+                <div class="fe-box" style="border-color: black;">
+                    <img src="promotions.png" style="height:200px;width:200px;"  alt="">
+                    <h6 style="font-size:25px;color:green;background-color: mediumslateblue;">Promotions</h6>
+                </div>
+                <div class="fe-box" style="border-color: black;">
+                    <img src="happysell.png" style="height:200px;width:200px;" alt="">
+                    <h6 style="font-size:25px;color:green;background-color: pink;">Happy Sell</h6>
+                </div>
+                <div class="fe-box" style="border-color: black;">
+                    <img src="247supp.png" style="height:200px;width:200px;" alt="">
+                    <h6 style="font-size:25px;color:green;background-color: peachpuff;">24/7 Support</h6>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="newsletter" class="section-p1 section-m1" style="background-color:rgb(32, 32, 118);">
+            <div class="newstext">
+            <h4 style="color:white;font-weight:bold;">Subscribe to our Newsletter</h2>
+            <p style="color:white;font-weight:bold;">Get the latest news and updates from us along with some <span>special offers.</span>.</p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your email address" style="margin:0 900px;">
+                <button class="normal" style="background-color: aqua;margin:0 900px;width:5%;height:40%;">Sign up</button>
+            </div>
+        </section>
+            
+
+        <footer class="section-p1">
+
+
+        </footer>
+
+        <script src="script.js"></script>
+        </body>
+        </html>
