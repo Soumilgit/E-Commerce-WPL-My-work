@@ -1,8 +1,8 @@
-﻿About,Contact and Cart pages.
+Consists of the About,Contact and Cart pages.
 # Folder structure :
-Here's the folder structure of the repository :
+Here is the folder structure of the repository :
 ```
-.gitattributes
+|.gitattributes
 ├─ .github
 │  └─ ISSUE_TEMPLATE
 │     ├─ bug_report.md
